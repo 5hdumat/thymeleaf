@@ -24,5 +24,13 @@
     <li>${userMap['userA'].getUsername()} = <span th:text="${userMap['userA'].getUsername()}"></span></li>
     <li>${userMap['userA'].age = <span th:text="${userMap['userA'].age}"></span></li>
 </ul>
+
+<!-- 타임리프 지역변수 선언 (단, 선언한 하위 태그에서만 사용할 수 있음) -->
+<h1>지역 변수 - (th:with)</h1>
+<div th:with="first=${users[0]}">
+    <p>
+        지역 변수 테스트 : <span th:text="${first.username}"></span>
+    </p>
+</div>
 </body>
 </html>
