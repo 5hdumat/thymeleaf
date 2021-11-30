@@ -50,6 +50,11 @@ public class BasicController {
         return "basic/variable";
     }
 
+    @GetMapping("/basic-objects")
+    public String basicObjects(HttpSession session) {
+        session.setAttribute("sessionData", "Hello Session");
+        return "basic/basic-objects";
+    }
 
     @GetMapping("/date")
     public String date(Model model) {
