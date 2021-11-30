@@ -140,11 +140,4 @@ public class BasicController {
             this.age = age;
         }
     }
-
-//    @Component("helloBean")
-//    static class HelloBean {
-//        public String hello(String data) {
-//            return "Hello " + data;
-//        }
-//    }
 }
